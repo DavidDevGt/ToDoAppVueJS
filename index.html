@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App VueJS - DavidDevGt</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Lista de Tareas Vue.js</h1>
+        <form @submit.prevent="agregarTarea">
+            <input type="text" v-model.trim="nuevaTarea" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <ul>
+            <li v-for="(tarea, indice) in tareas" :key="indice">
+                <input type="checkbox" v-model="tarea.completada">
+                <span :class="{ completada: tarea.completada }">{{ tarea.texto }}</span>
+                <button @click="eliminarTarea(indice)">Eliminar</button>
+            </li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+</html>
