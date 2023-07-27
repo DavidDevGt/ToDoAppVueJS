@@ -1,0 +1,85 @@
+body {
+  background: #F5F5F5;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  background: white;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #3F3F3F;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #3F51B5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #303F9F;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li span.completada {
+  text-decoration: line-through;
+  color: #BDBDBD;
+}
+
+li button {
+  margin-left: auto;
+  background: #F44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #D32F2F;
+}
